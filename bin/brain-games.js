@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log('Bienvenido a Brain Games!')
+import bienvenido from '../src/cli.js';
+
+bienvenido();
