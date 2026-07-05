@@ -16,17 +16,20 @@ const comparison = (answer, number) => {
     return (answer === 'yes') === isEven(number);
 }
 // contador de las respuestas
-const game = () => {
+const game = (name) => {
     let wins = 0;
     while (wins < 3) {
         const number = randomNum();
         const answer = pregunta(number);
         if (comparison(answer, number) === true){
             wins++
+            console.log('¡Correcto!');
         } else {
             wins = 0
+            console.log(`'${answer}' es una respuesta incorrecta ;(. La respuesta correcta era '${isEven(number) ? "yes" : "no"}'. ¡Intentémoslo de nuevo, ${name}!`)
         }
     }
+    console.log (`¡Felicidades, ${name}!`)
 }
 
 export { isEven, randomNum, game };

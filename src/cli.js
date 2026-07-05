@@ -4,6 +4,7 @@ const bienvenido = () => {
     console.log ('Hola! Bienvenido a Juegos Mentales!');
     const name = readlineSync.question('Cómo quieres que te llame?');
     console.log (`Hola! ${name}`)
+    return name;
 }
 
 const pregunta = (number) => {
