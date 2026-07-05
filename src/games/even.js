@@ -1,3 +1,6 @@
+
+import { pregunta } from '../cli.js';
+
 // definir que es un numero par
 const isEven = (number) => {
     return (number % 2 === 0);
@@ -15,10 +18,9 @@ const comparison = (answer, number) => {
 // contador de las respuestas
 const game = () => {
     let wins = 0;
-
     while (wins < 3) {
         const number = randomNum();
-        const answer = // getUserAnswer(number)
+        const answer = pregunta(number);
         if (comparison(answer, number) === true){
             wins++
         } else {
@@ -28,3 +30,4 @@ const game = () => {
 }
 
 export { isEven, randomNum, game };
+›
