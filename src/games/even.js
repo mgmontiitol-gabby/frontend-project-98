@@ -30,4 +30,3 @@ const game = () => {
 }
 
 export { isEven, randomNum, game };
-›

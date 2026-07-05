@@ -11,6 +11,6 @@ const pregunta = (number) => {
     console.log (`Pregunta: ${number}`)
     const respuesta = readlineSync.question ('Tu respuesta: ')
     return respuesta;
-
+}
 export default bienvenido;
 export { pregunta };
