@@ -26,7 +26,7 @@ const game = (name) => {
             console.log('¡Correcto!');
         } else {
             wins = 0
-            console.log(`'${answer}' es una respuesta incorrecta ;(. La respuesta correcta era '${isEven(number) ? "yes" : "no"}'. ¡Intentémoslo de nuevo, ${name}!`)
+            console.log(`'${answer}' es una respuesta incorrecta. La respuesta correcta era '${isEven(number) ? "yes" : "no"}'. ¡Intentémoslo de nuevo, ${name}!`)
         }
     }
     console.log (`¡Felicidades, ${name}!`)
