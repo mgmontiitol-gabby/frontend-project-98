@@ -5,3 +5,6 @@
 
 ## Demo
 [![asciicast](https://asciinema.org/a/1qNO815Owtd5CJys.svg)](https://asciinema.org/a/1qNO815Owtd5CJys)
+
+## Demo Calculadora
+[![asciicast](https://asciinema.org/a/GM0x1UcSKpnD6Amh.svg)](https://asciinema.org/a/GM0x1UcSKpnD6Amh)
