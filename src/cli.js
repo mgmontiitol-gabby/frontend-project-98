@@ -14,11 +14,17 @@ const pregunta = (number) => {
     return respuesta;
 }
 
-const preguntaCalc = (num1, num2, sign) =>{
+const preguntaCalc = (num1, num2, sign) => {
     console.log (`Pregunta: ${num1} ${sign} ${num2}`);
     const respuesta = readlineSync.question ('Tu respuesta: ');
     return respuesta;
 }
 
+const preguntaGcd = (num1, num2) => {
+    console.log (`Pregunta: ${num1} ${num2}`);
+    const respuesta = readlineSync.question ('Tu respuesta: ');
+    return respuesta;
+}
+
 export default bienvenido;
-export { pregunta, preguntaCalc };
+export { pregunta, preguntaCalc, preguntaGcd };
