@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 demo.cast
 calc-demo.cast
+progression-demo.cast
+gcd-demo.cast
