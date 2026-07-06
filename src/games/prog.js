@@ -29,7 +29,7 @@ const game = (name) => {
     console.log('¿Qué número falta en la progresión?');
     while (wins < 3){
         const coll = progression(); 
-        const [ _, rightAnswer] = hiddenIndex(coll);
+        const [, rightAnswer] = hiddenIndex(coll);
         const userAnswer = preguntaprog(coll);
         
         if (Number(userAnswer) === rightAnswer){
