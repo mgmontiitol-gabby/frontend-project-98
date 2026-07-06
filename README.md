@@ -8,3 +8,6 @@
 
 ## Demo Calculadora
 [![asciicast](https://asciinema.org/a/GM0x1UcSKpnD6Amh.svg)](https://asciinema.org/a/GM0x1UcSKpnD6Amh)
+
+## Demo Máximo Común Divisor gcd
+[![asciicast](https://asciinema.org/a/zkLrlhqK6PTBEcAp.svg)](https://asciinema.org/a/zkLrlhqK6PTBEcAp)
