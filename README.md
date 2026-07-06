@@ -11,3 +11,6 @@
 
 ## Demo Máximo Común Divisor gcd
 [![asciicast](https://asciinema.org/a/zkLrlhqK6PTBEcAp.svg)](https://asciinema.org/a/zkLrlhqK6PTBEcAp)
+
+## Demo Progresión Aritmetica
+[![asciicast](https://asciinema.org/a/OjCtLUIBTn5RO4V5.svg)](https://asciinema.org/a/OjCtLUIBTn5RO4V5)
