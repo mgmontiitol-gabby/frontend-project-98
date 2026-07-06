@@ -26,5 +26,12 @@ const preguntaGcd = (num1, num2) => {
     return respuesta;
 }
 
+const preguntaprog = (progression) => {
+    console.log (`Pregunta: ${progression.join(' ')}`);
+    const respuesta = readlineSync.question ('Tu respuesta: ');
+    return respuesta;
+}
+
+
 export default bienvenido;
-export { pregunta, preguntaCalc, preguntaGcd };
+export { pregunta, preguntaCalc, preguntaGcd, preguntaprog };
