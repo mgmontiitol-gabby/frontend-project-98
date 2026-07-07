@@ -1,7 +1,7 @@
 node_modules
 .DS_Store
-demo.cast
-calc-demo.cast
-progression-demo.cast
-gcd-demo.cast
-prime-demo.cast
+game-even-demo.cast
+game-calc-demo.cast
+game-gcd-demo.cast
+game-progression-demo.cast
+game-prime-demo.cast
