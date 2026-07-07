@@ -8,7 +8,7 @@ const isEven = (number) => {
 
 // dar numeros aleatorios .floor da un numero entero
 const randomNum = () => {
-    return Math.floor(Math.random() * 50);
+    return Math.floor(Math.random() * (50 - 2) + 2);
 }
 
 // evaluacion de la respuesta del usuario

@@ -1,6 +1,12 @@
 
-//formula para hallar el un número primo
+import {preguntaPrime} from '../cli.js';
 
+// numero aleatorio 
+const randomNum = () => {
+    return Math.floor(Math.random() * 50);
+}
+
+//formula para hallar el un número primo
 const primeNum = (n) => {
     if (n === 2){
         return true;
@@ -17,3 +23,29 @@ const primeNum = (n) => {
         }
     } return true;
 }
+
+const comparison = (answer, rightAnswer) => {
+    return (answer === 'yes') === rightAnswer;
+}
+
+const game = (name) => {
+    let wins = 0;
+    console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
+    while (wins < 3){
+        const num = randomNum();
+
+        const rightAnswer = primeNum(num);
+        const userAnswer = preguntaPrime(num);
+
+        if (comparison(userAnswer,rightAnswer) === true){
+            wins++;
+            console.log('¡Muy Bien, Es Correcto!')
+        } else {
+            wins = 0
+            console.log(`'${userAnswer}' es una respuesta incorrecta. La respuesta correcta era '${primeNum(num) ? 'yes' : 'no'}'. ¡Intentémoslo de nuevo, ${name}!`)
+        }
+    }
+    console.log (`¡Felicidades, ${name} Ganaste!`)
+}
+
+export { game };
