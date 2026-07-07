@@ -30,6 +30,7 @@ const comparison = (answer, rightAnswer) => {
 
 const game = (name) => {
     let wins = 0;
+    let failed = false;
     console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
     while (wins < 3){
         const num = randomNum();
@@ -41,11 +42,14 @@ const game = (name) => {
             wins++;
             console.log('¡Muy Bien, Es Correcto!')
         } else {
-            wins = 0
-            console.log(`'${userAnswer}' es una respuesta incorrecta. La respuesta correcta era '${primeNum(num) ? 'yes' : 'no'}'. ¡Intentémoslo de nuevo, ${name}!`)
+            console.log(`'${userAnswer}' es una respuesta incorrecta. La respuesta correcta era '${primeNum(num) ? 'yes' : 'no'}'. ¡Intentémoslo de nuevo, ${name}!`);
+            failed = true
+            break;
         }
     }
-    console.log (`¡Felicidades, ${name} Ganaste!`)
+    if (!failed) {
+    console.log(`¡Felicidades, ${name}!`);
+    }
 }
 
 export { game };
