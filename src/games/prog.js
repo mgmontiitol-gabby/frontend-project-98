@@ -26,6 +26,7 @@ const hiddenIndex = (progression) => {
 
 const game = (name) => {
     let wins = 0;
+    let failed = false;
     console.log('¿Qué número falta en la progresión?');
     while (wins < 3){
         const coll = progression(); 
@@ -36,11 +37,14 @@ const game = (name) => {
             wins++;
             console.log('¡Muy Bien, Es Correcto!')
         } else {
-            wins = 0
-            console.log(`'${userAnswer}' es una respuesta incorrecta. La respuesta correcta era '${rightAnswer}'. ¡Intentémoslo de nuevo, ${name}!`)
+            console.log(`'${userAnswer}' es una respuesta incorrecta. La respuesta correcta era '${rightAnswer}'. ¡Intentémoslo de nuevo, ${name}!`);
+            failed = true
+            break;
         }
     }
-    console.log (`¡Felicidades, ${name} Ganaste!`)
+    if (!failed) {
+    console.log(`¡Felicidades, ${name}!`);
+    }
 }
 
 export {game};
