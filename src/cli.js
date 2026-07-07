@@ -39,4 +39,4 @@ const preguntaPrime = (n) => {
 }
 
 export default bienvenido;
-export { pregunta, preguntaCalc, preguntaGcd, preguntaprog };
+export { pregunta, preguntaCalc, preguntaGcd, preguntaprog, preguntaPrime };
