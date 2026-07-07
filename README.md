@@ -14,3 +14,6 @@
 
 ## Demo Progresión Aritmetica
 [![asciicast](https://asciinema.org/a/OjCtLUIBTn5RO4V5.svg)](https://asciinema.org/a/OjCtLUIBTn5RO4V5)
+
+## Demo Número Primo
+[![asciicast](https://asciinema.org/a/7iYQnGnS7PGz0x4D.svg)](https://asciinema.org/a/7iYQnGnS7PGz0x4D)
