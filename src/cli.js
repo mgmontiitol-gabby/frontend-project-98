@@ -32,6 +32,11 @@ const preguntaprog = (progression) => {
     return respuesta;
 }
 
+const preguntaPrime = (n) => {
+    console.log (`Pregunta: ${n}`);
+    const respuesta = readlineSync.question ('Tu respuesta: ');
+    return respuesta;
+}
 
 export default bienvenido;
 export { pregunta, preguntaCalc, preguntaGcd, preguntaprog };
